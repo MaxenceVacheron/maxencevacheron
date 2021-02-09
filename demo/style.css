@@ -1,0 +1,119 @@
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+body {
+  margin-top: 10vh;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5vh;
+}
+
+body > #first {
+  max-width: 50%;
+  color: white;
+  /* -webkit-text-stroke: 2px rgb(255, 255, 255); */
+}
+
+@media only screen and (max-width: 420px) {
+  body {
+    flex-flow: column nowrap;
+    padding: 1vh;
+    margin-top: 1vh;
+  }
+  a {
+    font-size: 177%;
+  }
+  body > #first {
+    max-width: 90%;
+  }
+}
+
+body > #first > h1:hover {
+  color: white;
+  -webkit-text-stroke: 1px WHITE;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  font-size: 0.8em;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#first p {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media only screen and (max-width: 420px) {
+  #first p {
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 420px) {
+  #second {
+    padding-left: 5%;
+  }
+}
+.icon {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 420px) {
+  .icon img {
+    width: 32px;
+  }
+}
+.blur {
+  width: 100%;
+  font-size: 142%;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
+.blur {
+  width: 100%;
+  font-size: 142%;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  /* -webkit-text-stroke: 1px white; */
+
+  /* filter: blur(0px); */
+  /* -webkit-filter: blur(0px); */
+}
+
+.blur:hover {
+  color: white;
+  -webkit-text-stroke: 1px white;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.mobile-screen {
+  max-height: 70vh;
+  max-width: 50vw;
+}
+
+@media only screen and (max-width: 420px) {
+  .mobile-screen {
+    max-width: 90vw;
+  }
+}

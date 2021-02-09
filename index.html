@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maxence Vacheron</title>
+	<style>
+		* {
+			-webkit-transition: all 0.2s ease;
+			-moz-transition: all 0.2s ease;
+			-ms-transition: all 0.2s ease;
+			-o-transition: all 0.2s ease;
+		}
+
+		body {
+			font-family: Ubuntu, "times new roman", times, roman, serif;
+			background-color: black;
+			color: white;
+			display: flex;
+			height: 90vh;
+			align-items: center;
+			justify-content: space-evenly
+		}
+
+		body > a > h1 {
+			text-align: center;
+		}
+
+		@media only screen and (max-width: 420px) {
+			body {
+				flex-flow: column nowrap;
+				height: auto;
+			}
+		}
+
+		body>a {
+			font-size: 222%;
+			text-decoration: none;
+			color: black;
+			-webkit-text-stroke: 2px rgb(255, 255, 255);
+		}
+
+		@media only screen and (max-width: 420px) {
+			a {
+				font-size: 177%;
+			}
+		}
+
+		body>a:hover {
+			color: white;
+			-webkit-text-stroke: 1px WHITE;
+			/* width and color */
+			;
+		}
+
+		#menu {
+			display: flex;
+			flex-flow: column nowrap;
+
+		}
+
+		#menu li {
+			padding: 20px;
+
+		}
+
+		.blur {
+			width: 100%;
+			font-size: 142%;
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+			filter: blur(1px);
+			-webkit-filter: blur(1px);
+		}
+
+		.blur {
+			width: 100%;
+			font-size: 142%;
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+			filter: blur(0px);
+			-webkit-filter: blur(0px);
+		}
+
+
+
+		.blur:hover {
+			color: white;
+			-webkit-text-stroke: 1px white;
+			filter: blur(0px);
+			-webkit-filter: blur(0px);
+			;
+		}
+
+		.blink_me {
+			animation: blinker 1s linear infinite;
+			font-size: 0.8em;
+		}
+
+		@keyframes blinker {
+			50% {
+				opacity: 0;
+			}
+		}
+	</style>
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- <body onclick="window.open('/MaxenceVacheron.pdf')"> -->
+	<!-- <a href="/MaxenceVacheron.pdf"> -->
+	<a href="#">
+		<h1>Maxence Vacheron</h1>
+	</a>
+	<div id="menu">
+		<ul>
+			<li>
+				<a class="blur" href="demo/banana.html">PHP, SYMFONY, DOCTRINE, TWIGG<br><b>Banana : Playlist
+						Builder</b><br>WEB APP
+				</a>
+				<br>
+				<a class="noblur blink_me" href="http://www.maxencevacheron.fr/player" target="_blank">
+					<img width="16px" src="web.png">
+				</a>
+				<a class="noblur" href="https://github.com/MaxenceVacheron/banana" target="_blank">
+					<img width="16px" src="GitHub-Mark/PNG/GitHub-Mark-Light-32px.png">
+				</a>
+			</li>
+			<li>
+				<a class="blur" href="demo/zelda.html">BASH<br><b>Legend of Zelda</b><br>CLI
+				</a>
+				<br>
+				<a class="blur blink_me" href="http://www.maxencevacheron.fr:51234" target="_blank">>_
+				</a>
+				<a class="noblur" href="https://github.com/MaxenceVacheron/gotty-hyrule" target="_blank">
+					<img width="16px" src="GitHub-Mark/PNG/GitHub-Mark-Light-32px.png">
+				</a>
+			</li>
+			<li>
+				<a class="blur" href="demo/mycrd.html">C<br><b>CRUD</b><br>CLI
+				</a>
+				<br>
+				<a class="blur blink_me" href="http://www.maxencevacheron.fr:2783" target="_blank">>_
+				</a>
+				<a class="noblur" href="https://github.com/MaxenceVacheron/my_crd.c" target="_blank">
+					<img width="16px" src="GitHub-Mark/PNG/GitHub-Mark-Light-32px.png">
+				</a>
+			</li>
+			<li>
+				<a class="blur" href="demo/mycrd.html">And more on my CV !
+				</a>
+				<br>
+				</a>
+
+			</li>
+		</ul>
+	</div>
+</body>
+<script>
+</script>
+
+</html>
